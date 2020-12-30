@@ -1,6 +1,6 @@
 import yaml
 
-path = "./data.yml"
+path = "data.yml"
 
 
 def get_data(path):
