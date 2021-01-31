@@ -1,0 +1,24 @@
+{
+  "uuid": "3eafc913-97c1-4b15-815d-e5bd23e4083a",
+  "children": [
+    "69eea9f7-fbac-4a42-b291-9f16e24a7cc5"
+  ],
+  "befores": [
+    {
+      "name": "record_vedio",
+      "status": "passed",
+      "start": 1610897713487,
+      "stop": 1610897713685
+    }
+  ],
+  "afters": [
+    {
+      "name": "record_vedio::0",
+      "status": "passed",
+      "start": 1610897757160,
+      "stop": 1610897757161
+    }
+  ],
+  "start": 1610897713487,
+  "stop": 1610897757161
+}

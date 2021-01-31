@@ -1,0 +1,8 @@
+[32mINFO    [0m root:base_page.py:87 find 的值是：//*[@resource-id='com.xueqiu.android:id/post_status'], action的只是：find_and_click, content的值是：None
+[32mINFO    [0m root:black_handle.py:12 开始查找元素： args是 (<test_frame.page.main.Main object at 0x0000020C2CE45B20>, 'xpath', "//*[@resource-id='com.xueqiu.android:id/post_status']"),kwargs是 {}
+[32mINFO    [0m root:base_page.py:87 find 的值是：//*[@text='行情'], action的只是：find_and_click, content的值是：None
+[32mINFO    [0m root:black_handle.py:12 开始查找元素： args是 (<test_frame.page.main.Main object at 0x0000020C2CE45B20>, 'xpath', "//*[@text='行情']"),kwargs是 {}
+[32mINFO    [0m root:base_page.py:87 find 的值是：//*[@resource-id='com.xueqiu.android:id/action_search'], action的只是：find_and_click, content的值是：None
+[32mINFO    [0m root:black_handle.py:12 开始查找元素： args是 (<test_frame.page.market.Market object at 0x0000020C2D1B6760>, 'xpath', "//*[@resource-id='com.xueqiu.android:id/action_search']"),kwargs是 {}
+[32mINFO    [0m root:base_page.py:87 find 的值是：//*[@resource-id='com.xueqiu.android:id/search_input_text'], action的只是：find_and_send, content的值是：顺丰
+[32mINFO    [0m root:black_handle.py:12 开始查找元素： args是 (<test_frame.page.search.Search object at 0x0000020C2CD2F5E0>, 'xpath', "//*[@resource-id='com.xueqiu.android:id/search_input_text']"),kwargs是 {}
