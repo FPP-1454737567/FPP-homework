@@ -1,11 +1,12 @@
 # @Time : 2021/1/31 
 # @Author : FPP
+import pytest
 import requests
 
 
 def get_access_token():
     url = "https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=ww88eabb74914f63c9&corpsecret=VGda4erlfUAj11iv6pmIIVEJrlUrKd8MCLDiUZRmkNw"
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     return response.json()["access_token"]
 
 
@@ -22,7 +23,8 @@ def test_add_member():
     assert 0 == r.json()['errcode']
 
 
-def test_get_member():
+@pytest.mark.parametrize("tmp", [1, 2])
+def test_get_member(tmp):
     url = f"https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token={get_access_token()}&userid=FangPanPan"
     r = requests.get(url)
     print(r.json())
@@ -41,5 +43,8 @@ def test_update_member():
 
 def test_delete_member():
     url = f"https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token={get_access_token()}&userid=fpp20200131001"
-    requests.get(url)
-    print(set(url))
+    # 在Python3.7及以上版本中基于requests模块使用代理，传给proxies的参数值必须加上http://或者https://，不加就会报错，proxies的参数值为{'http': 'http://ip:port'}键值对类型的字典
+    # proxies = {"https": "https://127.0.0.1:8888"}
+    r = requests.get(url, verify=False)
+    print(r.json())
+    # print(set(url))

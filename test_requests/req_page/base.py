@@ -24,4 +24,7 @@ class Base:
 
 
 if __name__ == '__main__':
-    a = Base().get_token(None, None)
+    a = Base().get_token()
+    a = 3 / 2
+    b = 3 // 2
+    print(a, b)

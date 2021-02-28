@@ -21,7 +21,7 @@ class Contact(Base):
     def get_member(self, userid):
         url = "https://qyapi.weixin.qq.com/cgi-bin/user/get"
         params = {"userid": userid}
-        r = self.s.get(url, params=params)
+        r = self.s.get(url, params=params, verify=False)
         return r.json()
 
     def delete_member(self, userid):
